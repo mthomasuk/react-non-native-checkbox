@@ -12,5 +12,4 @@ npm start
 
 ```
 npm test
-npm run chrome-test
 ```
