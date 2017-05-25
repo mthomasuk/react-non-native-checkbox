@@ -15,7 +15,7 @@ export default class Checkbox extends React.PureComponent {
     };
   }
 
-  onClick = (e) => {
+  onClick = () => {
     this.setState({
       checked: !this.state.checked
     });
