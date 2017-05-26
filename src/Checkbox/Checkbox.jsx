@@ -16,6 +16,7 @@ export default class Checkbox extends React.PureComponent {
   }
 
   onClick = () => {
+    if (this.props.readOnly || this.props.disabled) return;
     this.setState({
       checked: !this.state.checked
     });
@@ -28,7 +29,7 @@ export default class Checkbox extends React.PureComponent {
     return (
       <label className={`checkbox${classNameModifier ? ' ' + classNameModifier : ''}`} onClick={this.onClick}>
         {labelText}
-        <div readOnly={readOnly} disabled={disabled} className={`checkbox-input`} data-checked={!!checked} onClick={this.onClick}>
+        <div readOnly={readOnly} disabled={disabled} className={`checkbox-input${disabled ? ' disabled' : ''}`} data-checked={!!checked} onClick={this.onClick}>
           <span>{checked
               ? "✓"
               : null}</span>

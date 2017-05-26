@@ -12,7 +12,7 @@ class App extends Component {
           <h2>Welcome to Mark's Super Cool Checkbox</h2>
           <h5>OMG it's a checkbox</h5>
         </div>
-        <Checkbox labelText={'Hi I\'m a label'}/>
+        <Checkbox labelText={'Hi I\'m a label'} disabled={false}/>
       </div>
     );
   }

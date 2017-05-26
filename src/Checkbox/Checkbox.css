@@ -13,6 +13,11 @@
   position: relative;
 }
 
+.checkbox-input.disabled {
+  border: 2px solid #666;
+  background: #c7c7c7;
+}
+
 .checkbox-input span {
   position: absolute;
   top: 0;
